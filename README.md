@@ -186,7 +186,6 @@ The dataset used comprises 569 cases, with 212 cases labeled as malignant and 35
 - More Benign cases than Malignent in the dataset.
 
 **Correlation**
-![output_36_1](https://github.com/adilsaid64/breast-cancer-classification/assets/110467589/58170222-27c2-46ba-97e5-371d45db20f8)
 
 ![png](output_16_1.png)
 
@@ -248,4 +247,11 @@ model1.fit(X_train, y_train)
 ![png](output_36_1.png)
 
 
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0.0          | 1.00      | 0.92   | 0.96     | 48      |
+| 1.0          | 0.94      | 1.00   | 0.97     | 66      |
+| accuracy     | 0.96      | 114    |          |         |
+| macro avg    | 0.97      | 0.96   | 0.96     | 114     |
+| weighted avg | 0.97      | 0.96   | 0.96     | 114     |
 
