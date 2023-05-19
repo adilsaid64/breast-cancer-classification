@@ -176,3 +176,69 @@ The dataset used comprises 569 cases, with 212 cases labeled as malignant and 35
 - Benign have higher mean smoothness than Melignant
 
 
+**Case count**
+
+   
+![png](output_13_1.png)
+    
+    
+**Some observation**:
+- More Benign cases than Malignent in the dataset.
+
+
+## Model Training
+
+- Define Matrix of Features *X* and target *y*
+
+- Split into testing and training data
+
+```python
+# Matrix of features X and target y
+X = df.drop(["target"], axis = 1)
+y = df["target"]
+
+
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state=5)
+
+
+from sklearn.svm import SVC
+from sklearn.metrics import classification_report, confusion_matrix
+
+
+model1 = SVC()
+
+model1.fit(X_train, y_train)
+```
+
+## Model Evaluation
+
+**Confusion Matrix**
+
+![png](output_24_1.png)
+
+**Looking at these results:**
+- We have 0 type II errors. I.e, so the model did not give any False Negatives.
+- 7 type I errors. The model gave 7 False Positive.
+- When a cell was malignant, the model correcrly 41. And When the cell was benign, the model correcrlt identified 66.
+
+## Improving Model
+
+1. Feature scaling (Uniity Based Normalization).
+
+2.  Grid Search. SVM parameters optimization: 
+    - C parameter : Controll the trade of between classyfying and having a smooth decision bounary.
+        - Small C (loose) : Makes cost of misclassification low (soft margin).
+        - Large C (strict) : Makes cost of misclassification high, forcing model to explain input data stricter potentially over fitting.
+    - Gamma parameter : Controls how far the influence of a single training set reaches.
+        - Large Gamma : Close reach (closer data points have more weight)
+        
+        - Small Gamna : Far reach (more generalized solution)
+
+**1. Results After Feature Scaling**
+
+![png](output_36_1.png)
+
+
+
