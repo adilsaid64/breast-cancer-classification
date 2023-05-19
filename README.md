@@ -186,6 +186,8 @@ The dataset used comprises 569 cases, with 212 cases labeled as malignant and 35
 - More Benign cases than Malignent in the dataset.
 
 **Correlation**
+![output_36_1](https://github.com/adilsaid64/breast-cancer-classification/assets/110467589/58170222-27c2-46ba-97e5-371d45db20f8)
+
 ![png](output_16_1.png)
 
 
