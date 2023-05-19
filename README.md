@@ -1,4 +1,4 @@
-# Breast cancer classification
+# Breast Cancer Classification
 
 Breast cancer classification using machine learning techniques has become an essential area of research for improving early detection and diagnosis. This project focuses on developing a reliable model that can accurately differentiate between malignant and benign breast tumors.
 
@@ -6,7 +6,7 @@ In this breast cancer classification project, a Support Vector Machine (SVM) alg
 
 The dataset used comprises 569 cases, with 212 cases labeled as malignant and 357 cases labeled as benign. The dataset consists of 30 features, including mean radius, mean texture, mean perimeter, mean area, mean smoothness, mean compactness, mean concavity, and mean concave points, among others. 
 
-## Explotory data analysis
+## Exploratory Data Analysis
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -251,7 +251,33 @@ model1.fit(X_train, y_train)
 |--------------|-----------|--------|----------|---------|
 | 0.0          | 1.00      | 0.92   | 0.96     | 48      |
 | 1.0          | 0.94      | 1.00   | 0.97     | 66      |
-| accuracy     | 0.96      | 114    |          |         |
+| accuracy     |           |        | 0.96     | 114     |
 | macro avg    | 0.97      | 0.96   | 0.96     | 114     |
 | weighted avg | 0.97      | 0.96   | 0.96     | 114     |
 
+
+**2. Results After Grid Search**
+
+![png](output_47_1.png)
+
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0.0          | 1.00      | 0.92   | 0.96     | 48      |
+| 1.0          | 0.94      | 1.00   | 0.97     | 66      |
+| accuracy     |           |        | 0.96     | 114     |
+| macro avg    | 0.97      | 0.96   | 0.96     | 114     |
+| weighted avg | 0.97      | 0.96   | 0.96     | 114     |
+
+In this case, the grid parameter optimization seems to have not affected the model.
+
+We only have 4 type I errors and 0 type II errors.
+
+## Conclusion
+
+- Built a model that can classify between Benign and Malignant.
+- Model had an precision of 97%. Only 4 type I errors and 0 type II errors. There is still room for improvement.
+
+**What I have learned :**
+- How to implement Support Vector Machine Classifier
+- Feature Scaling
+- Grid Search for parameter optimization
