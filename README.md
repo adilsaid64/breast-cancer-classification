@@ -161,5 +161,18 @@ The dataset used comprises 569 cases, with 212 cases labeled as malignant and 35
 </div>
 
 **Data Visualization**
+
 ![png](output_11_1.png)
+
+0 - indicates Malignant --> The life threatning case
+
+1 - indicates Benign
+
+**Some observation :**
+- Looking at the distributions for mean radius, mean area and mean perimeter. We see that Malignant cases tend to be larger than Benign.
+
+- Looking at mean texture, we see that Melignant have a higher mean texture compared with Benign. 
+
+- Benign have higher mean smoothness than Melignant
+
 
