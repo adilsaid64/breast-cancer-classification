@@ -185,12 +185,17 @@ The dataset used comprises 569 cases, with 212 cases labeled as malignant and 35
 **Some observation**:
 - More Benign cases than Malignent in the dataset.
 
+**Correlation**
+![png](output_16_1.png)
+
 
 ## Model Training
 
 - Define Matrix of Features *X* and target *y*
 
 - Split into testing and training data
+
+- Fit the SVM model
 
 ```python
 # Matrix of features X and target y
