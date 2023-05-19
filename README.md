@@ -7,21 +7,6 @@ In this breast cancer classification project, a Support Vector Machine (SVM) alg
 The dataset used comprises 569 cases, with 212 cases labeled as malignant and 357 cases labeled as benign. The dataset consists of 30 features, including mean radius, mean texture, mean perimeter, mean area, mean smoothness, mean compactness, mean concavity, and mean concave points, among others. 
 
 ## Explotory data analysis
-
-**First few rows**
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
